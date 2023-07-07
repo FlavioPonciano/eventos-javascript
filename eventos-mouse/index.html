@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos por Mouse</title>
+    <style>
+        .divisoria {
+            background: #ccc; height: 150px; width: 150px;
+            border: 1px solid black;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="divisoria" onclick="acao()"></div> <!--Chamando um evento ou função indicando o clique do mouse com o evento onclick-->
+    <div class="divisoria" ondblclick="acao()"></div> <!--Dois cliques no elemento-->
+    <div class="divisoria" onmouseup="acao()"></div> <!--Quando o cliquei do mouse é largado em cima do elemento-->
+    <div class="divisoria" onmouseover="acao()"></div> <!--Quando o cursos entra na area do elemento-->
+    <div class="divisoria" onmouseout="acao()"></div> <!--Quando o cursor sai da area do elemento-->
+    <div class="divisoria" onclick="acao()" onmouseout="acao2()"></div> <!--Podemos colocar mais de um evento em um elemento-->
+    <script src="index.js"></script>
+</body>
+</html>
