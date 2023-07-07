@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com Janela</title>
+    <style>
+        .janela{
+            height: 3000px;
+            width: 125px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body onresize="console.log('Evento disparado')" onscroll="console.log('Rolando a página')"> <!--Adicionando o evento de redimensonamento de janela e de rolagem, o de rolagem pode adicionado em outros elementos além do body-->
+    <div class="janela">
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
